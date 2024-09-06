@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('imagens/Cafeteria.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+.top-header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top-header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.top-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.top-header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: rgba(90, 42, 2, 0.788);
+    padding: 20px 0;
+    text-align: center;
+    height: 50vh;
+}
+
+.logo {
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.address {
+    margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    padding: 20px;
+    max-width: 100%; 
+    box-sizing: border-box; 
+}
+
+.menu-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 350px;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+.menu-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+}
+
+.menu-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+@media (max-width: 900px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    .top-header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .top-header nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        max-width: 150px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr; 
+    }
+
+    .menu-item {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+}

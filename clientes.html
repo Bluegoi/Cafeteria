@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagens/xicara.png" type="image/x-icon">
+    <title >Clientes - Café & Conforto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('imagens/Imagemfundo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        .top-header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .top-header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .top-header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .top-header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .client-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            height: 300px;
+        }
+
+        .client-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .clients-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .clients-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Menu</a></li>
+
+                <li><a href="localizacao.html">Localização</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+            </ul>
+            
+        </nav>
+    <h1 style="color: rgb(255, 255, 255); ">Clientes - Café & Conforto</h1>
+
+    </div>
+
+    <div class="clients-grid">
+        <!-- Cliente 1 -->
+        <div class="client-card">
+            <img src="imagens/cliente1.jpg" alt="Cliente 1">
+        </div>
+        <!-- Cliente 2 -->
+        <div class="client-card">
+            <img src="imagens/cliente2.jpg" alt="Cliente 2">
+        </div>
+        <!-- Cliente 3 -->
+        <div class="client-card">
+            <img src="imagens/cliente3.jpg" alt="Cliente 3">
+        </div>
+        <!-- Cliente 4 -->
+        <div class="client-card">
+            <img src="imagens/cliente4.jpg" alt="Cliente 4">
+        </div>
+        <!-- Cliente 5 -->
+        <div class="client-card">
+            <img src="imagens/cliente5.jpg" alt="Cliente 5">
+        </div>
+        <!-- Cliente 6 -->
+        <div class="client-card">
+            <img src="imagens/cliente6.jpg" alt="Cliente 6">
+        </div>
+        <!-- Cliente 7 -->
+        <div class="client-card">
+            <img src="imagens/cliente7.jpg" alt="Cliente 7">
+        </div>
+        <!-- Cliente 8 -->
+        <div class="client-card">
+            <img src="imagens/cliente8.jpg" alt="Cliente 8">
+        </div>
+        <!-- Cliente 9 -->
+        <div class="client-card">
+            <img src="imagens/cliente9.jpg" alt="Cliente 9">
+        </div>
+        <!-- Cliente 10 -->
+        <div class="client-card">
+            <img src="imagens/cliente10.jpg" alt="Cliente 10">
+        </div>
+        <!-- Cliente 11 -->
+        <div class="client-card">
+            <img src="imagens/cliente11.jpg" alt="Cliente 11">
+        </div>
+        <!-- Cliente 12 -->
+        <div class="client-card">
+            <img src="imagens/cliente12.jpg" alt="Cliente 12">
+        </div>
+    </div>
+</body>
+</html>
